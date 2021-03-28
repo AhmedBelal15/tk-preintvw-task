@@ -1,0 +1,86 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    max-width: max-content;
+    margin: 0 auto;
+}
+.add-meal-section{
+    min-width: 50rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.add-meal-section form{
+    display: flex;
+    flex-direction: column;
+}
+
+.inline{
+    display: flex;
+}
+
+.inline label{
+    display: inline-block;
+    width: 6rem;
+}
+
+.mt{
+    margin-top: 1rem;
+}
+
+textarea{
+    min-width: 20rem;
+    max-width: 20rem;
+    min-height: 3rem;
+    max-height: 3rem;
+}
+
+input[type='text'] {
+    width: 10rem;
+}
+
+input[type='submit'] {
+    width: 10rem;
+    margin-top: 1rem;
+    background: #249cd3;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    height: 1.5rem;
+    width: 5.5rem;
+}
+
+input[type='file'] {
+    display: none;
+}
+
+form img {
+    width: 200px;
+    height: auto;
+}
+
+label[for="browse-image"]{
+    width: 7rem;
+    height: 2rem;
+    border-radius: 5px;
+    background: #cccccc;
+    margin-top: 5px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+select{
+    width: 10rem;
+}
+
+.center-subitem{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}

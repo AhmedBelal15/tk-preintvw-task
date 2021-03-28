@@ -1,0 +1,104 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    max-width: max-content;
+    margin: 0 auto;
+}
+
+.add-order-section{
+    min-width: 50rem;
+}
+
+form{
+    margin-top: 1rem;
+    width: 50rem;
+    height: 10rem;
+    border: solid 2px #cccccc;
+    justify-content: space-between;
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+.form-container{
+    display: flex;
+    justify-content: space-between;
+    max-width: 24rem;
+    padding: 10px;
+}
+input[type='checkbox']{
+    margin-right: 3px;
+}
+.inline{
+    display: flex;
+}
+
+label[for='category-input'], label[for='meal-input'], label[for='quantity-input'] {
+    width: 4.1rem;
+}
+
+.submit-container{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.submit-button{
+    width: 7rem;
+    height: 2.5rem;
+    border-radius: 5px;
+    background: #249cd3;
+    border: none;
+    color: white;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.table-container{
+    width: 50rem;
+    height: 18rem;
+    background: #cccccc;
+    padding: 2px;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.table{
+    background: white;
+    width: 95%;
+    height: 70%;
+}
+
+.table ul {
+    list-style-type: none;
+    display: flex;
+    flex: 1 1 0;
+    justify-content: space-evenly;
+}
+
+
+.table ul li {
+    width: 100%;
+    border: 0.5px solid black;
+    display: flex;
+    justify-content: center;
+}
+
+.total-container {
+    display: flex;
+    justify-content: flex-end;
+    width: 95%;
+    margin-top: 15px;
+}
+
+.button-container{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 5px;
+}
