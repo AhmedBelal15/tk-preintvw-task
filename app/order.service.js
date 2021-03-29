@@ -20,6 +20,8 @@ angular.module("appModule").service("mealOrderServices", function () {
 
   this.addMealToOrder = function ($scope) {
     return function () {
+      //form validation
+      if($scope.quantity < 1 ||typeof $scope.quantity !== "number"  || $scope.selectedMeal === '' || $scope.mealCategory === ''){return}
       const meal = {};
       let addons = "";
       if ($scope.combo) addons += "combo ";

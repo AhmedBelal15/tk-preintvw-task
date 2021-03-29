@@ -8,7 +8,7 @@
     </ul>
   </nav>
   <div class="add-order-section">
-    <form class="flex-column addorder-form">
+    <form class="flex-column addorder-form" ng-submit="addMealToOrder()">
       <div class="form-container">
         <div class="inline leftside-parent">
         <div class="leftside-container flex-column">
@@ -35,7 +35,7 @@
           </div>
           <div class="inline">
             <label for="quantity-input">Quantity</label>
-            <input type="number" id="quantity-input" required ng-model='quantity'/>
+            <input type="number" id="quantity-input" ng-model='quantity' min="1" required/>
           </div>
         </div>
 
@@ -56,7 +56,7 @@
         </div>
       </div>
         <div class="submit-container">
-          <input class="submit-button" type="submit" value="Add" ng-click='addMealToOrder()' />
+          <input class="submit-button" type="submit" value="Add" />
         </div>
       </div>
     </form>

@@ -18,7 +18,7 @@
 
       <div class="inline mt">
         <label for="price-input">Price</label>
-        <input type="number" id="price-input" required ng-model="meal.price" />
+        <input type="number" id="price-input" required ng-model="meal.price" min="1" />
         <p>&nbsp; *</p>
       </div>
 
@@ -39,9 +39,9 @@
       </div>
     </form>
 
-    <form>
-      <img src="Assets\image-placeholder.jpg" alt="placeholder" />
-      <input type="file" id="browse-image" />
+    <form ng-init="image_source='Assets/image-placeholder.jpg'">
+      <img ng-src="{{image_source}}" alt="" id='meal-image' />
+      <input type="file" id="browse-image" class="ng-hide" onchange="angular.element(this).scope().setFile(this)" accept="image/*"/>
       <div class="center-subitem">
         <label for="browse-image">Select Image</label>
       </div>
