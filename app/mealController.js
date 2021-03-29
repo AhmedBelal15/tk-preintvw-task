@@ -1,4 +1,4 @@
-angular.module("appModule").controller("mealController", [
+angular.module("appModule").controller("meal-controller", [
   "$scope",
   function($scope){
     $scope.categories = ["Main Dish", "Appetizer", "Salad", "Dessert"];

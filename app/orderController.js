@@ -1,4 +1,4 @@
-angular.module("appModule").controller("orderController", [
+angular.module("appModule").controller("order-controller", [
   "$scope",
   function ($scope) {
     const mealsData = JSON.parse(localStorage.getItem("meal-data"));
