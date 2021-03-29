@@ -2,9 +2,8 @@ angular.module("appModule").controller("meal-controller", [
   "$scope",
   function($scope){
     $scope.categories = ["Main Dish", "Appetizer", "Salad", "Dessert"];
-    $scope.log = function(){
+    $scope.addMeal = function(){
       const data = JSON.parse(localStorage.getItem('meal-data'))
-      console.log(data);
       if(data){
         const newData = [...data, $scope.meal]
         localStorage.setItem('meal-data', JSON.stringify(newData))
