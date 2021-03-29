@@ -12,7 +12,7 @@ body{
     min-width: 50rem;
 }
 
-form{
+.addorder-form{
     margin-top: 1rem;
     width: 50rem;
     height: 10rem;
@@ -26,7 +26,8 @@ form{
 .form-container{
     display: flex;
     justify-content: space-between;
-    max-width: 24rem;
+    flex: 1 1 0;
+    /* width: 25rem; */
     padding: 10px;
 }
 input[type='checkbox']{
@@ -40,9 +41,14 @@ label[for='category-input'], label[for='meal-input'], label[for='quantity-input'
     width: 4.1rem;
 }
 
+label[for='spicy'], label[for='combo'] {
+    width: 8rem;
+}
+
 .submit-container{
     display: flex;
     justify-content: flex-end;
+    align-items: flex-end;
 }
 
 .submit-button{
@@ -53,7 +59,7 @@ label[for='category-input'], label[for='meal-input'], label[for='quantity-input'
     border: none;
     color: white;
     margin-right: 5px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 .table-container{
@@ -72,6 +78,7 @@ label[for='category-input'], label[for='meal-input'], label[for='quantity-input'
     background: white;
     width: 95%;
     height: 70%;
+    overflow: scroll;
 }
 
 .table ul {
@@ -101,4 +108,24 @@ label[for='category-input'], label[for='meal-input'], label[for='quantity-input'
     display: flex;
     justify-content: flex-end;
     padding: 5px;
+}
+
+.leftside-container{
+    height: 5rem;
+    justify-content: space-around;
+}
+
+.leftside-parent{
+    width: 27rem;
+    justify-content: space-around;
+}
+
+.midside-container {
+    height: 9rem;
+    justify-content: space-between;
+}
+
+.midside-container p {
+    font-size: 24px;
+    font-weight: 700;
 }

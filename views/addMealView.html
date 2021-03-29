@@ -1,0 +1,51 @@
+<div ng-controller="mealController">
+  <h1>Restaurant Order</h1>
+  <nav>
+    <ul>
+      <li class="active-page"><a href="/#/addmeal">Add Meal</a></li>
+      <li><a href="/#/addorder"> Add Order </a></li>
+      <li><a href="/#"> Reports </a></li>
+    </ul>
+  </nav>
+
+  <div class="add-meal-section">
+    <form ng-submit="log()">
+      <div class="inline mt">
+        <label for="name-input">Name</label>
+        <input type="text" id="name-input" required ng-model="meal.name" />
+        <p>&nbsp; *</p>
+      </div>
+
+      <div class="inline mt">
+        <label for="price-input">Price</label>
+        <input type="number" id="price-input" required ng-model="meal.price" />
+        <p>&nbsp; *</p>
+      </div>
+
+      <div class="inline mt">
+        <label for="description-input">Description</label>
+        <textarea id="description-input" ng-model='meal.description'></textarea>
+      </div>
+
+      <div class="inline mt">
+        <label for="category">Category</label>
+        <select id="category" required ng-model='meal.category'>
+          <option ng-repeat="category in categories" value="{{category}}">{{category}}</option>
+        </select>
+        <p>&nbsp; *</p>
+      </div>
+      <div class="center-subitem">
+        <input type="submit" value="Save" />
+      </div>
+    </form>
+
+    <form>
+      <img src="Assets\image-placeholder.jpg" alt="placeholder" />
+      <input type="file" id="browse-image" />
+      <div class="center-subitem">
+        <label for="browse-image">Select Image</label>
+      </div>
+    </form>
+  </div>
+ 
+</div>
